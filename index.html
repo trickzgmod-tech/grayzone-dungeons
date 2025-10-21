@@ -38,10 +38,54 @@ body{
   border-left:2px solid transparent;transition:all .2s;
 }
 .nav a:hover{color:#fff;border-color:#d6b45a;text-shadow:0 0 6px #d6b45a;}
-.discord{
-  margin-top:2rem;text-align:center;font-size:0.9rem;color:#d6b45a;
+
+/* ==== NEW DISCORD SECTION ==== */
+.discord {
+  margin-top: 2rem;
+  text-align: center;
+  background: rgba(40,25,10,0.85);
+  border: 2px solid #d6b45a;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 0 15px rgba(214,180,90,0.3),
+              inset 0 0 20px rgba(0,0,0,0.5);
+  transition: box-shadow 0.3s;
 }
-.discord iframe{width:100%;height:120px;border:none;margin-top:0.5rem;border-radius:6px;}
+.discord:hover {
+  box-shadow: 0 0 25px rgba(214,180,90,0.5),
+              inset 0 0 30px rgba(0,0,0,0.6);
+}
+.discord h3 {
+  font-family:'Cinzel Decorative',serif;
+  font-size:1.1rem;
+  color:#d6b45a;
+  margin-bottom:0.5rem;
+  text-shadow:0 0 8px #7a6024;
+}
+.discord p {
+  color:#e9d8a6;
+  font-size:0.85rem;
+  margin-bottom:1rem;
+  line-height:1.4;
+}
+.discord-btn {
+  display:inline-block;
+  background:linear-gradient(180deg,#d6b45a 0%,#8a6c2b 100%);
+  color:#1a1205;
+  padding:0.6rem 1.3rem;
+  border-radius:6px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  transition:all 0.2s;
+  box-shadow:0 0 8px rgba(214,180,90,0.5);
+}
+.discord-btn:hover {
+  transform:translateY(-2px);
+  box-shadow:0 0 15px rgba(255,230,140,0.8);
+  color:#000;
+}
+
 main{
   margin-left:250px;padding:0;position:relative;
 }
@@ -98,6 +142,7 @@ footer{
 </head>
 <body class="candlelight">
 <div id="loader"><img src="assets/rune_loader.gif" alt="Loading..."></div>
+
 <div class="sidebar">
   <div>
     <h1>GrayZone Dungeons</h1>
@@ -109,9 +154,12 @@ footer{
       <a href="#community">💬 Community</a>
     </nav>
   </div>
+
+  <!-- Updated Discord Section -->
   <div class="discord">
-    <span>Join the Guild</span>
-    <iframe src="https://discord.com/widget?id=1390087442031448174&theme=dark"></iframe>
+    <h3>Join the Guild</h3>
+    <p>Gather with adventurers, share tales, and prepare for the next descent.</p>
+    <a href="https://discord.gg/qZApqG7uPp" target="_blank" class="discord-btn">Enter Tavern</a>
   </div>
 </div>
 
